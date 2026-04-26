@@ -1,0 +1,39 @@
+export const BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
+export const API_PATHS = {
+    AUTH:{
+        REGISTER: 'api/auth/register',
+        LOGIN: 'api/auth/login',
+        GET_PROFILE: 'api/auth/profile',
+        UPDATE_PROFILE: 'api/auth/profile',
+    },
+    USERS: {
+        GET_ALL: '/api/user/',
+        GET_TEAM_MEMBERS: '/api/user/',
+        GET_BY_ID: '/api/user/:id',
+        CREATE_USER: '/api/user/',
+        UPDATE_USER: '/api/user/:id',
+        DELETE_USER: '/api/user/:id',
+        DELETE_TEAM_MEMBER: '/api/user/:id',
+    },
+    TASKS: {
+        GET_ALL: '/api/task/',
+        GET_MANAGE_TASKS: '/api/task/',
+        GET_BY_ID: '/api/task/:id',
+        GET_DASHBOARD_DATA: '/api/task/dashBoard-data',
+        GET_USER_DASHBOARD: '/api/task/user-dashboard-data',
+        UPDATE_STATUS: '/api/task/:id/status',
+        UPDATE_CHECKLIST: '/api/task/:id/checklist',
+        CREATE_TASK: '/api/task',
+        UPDATE_TASK: '/api/task/:id',
+        DELETE_TASK: '/api/task/:id',
+        UPLOAD_ATTACHMENT: '/api/task/upload-attachment',
+    },
+    AI: {
+        GENERATE_TASK_DRAFT: '/api/ai/task-draft',
+        BREAK_TASK: '/api/ai/break-task',
+        SUGGESTIONS: '/api/ai/suggestions',
+        CHAT: '/api/ai/chat',
+        INSIGHTS: '/api/ai/insights',
+        ROADMAP: '/api/ai/roadmap',
+    },
+}
