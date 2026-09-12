@@ -15,6 +15,7 @@ import ChatAssistant from './pages/shared/ChatAssistant'
 import AiInsights from './pages/user/AiInsights'
 import CompletedTasks from './pages/user/CompletedTasks'
 import UserRoadmap from './pages/user/UserRoadmap'
+import AdminStrategicDashboard from './pages/admin/AdminStrategicDashboard'
 import PageTitle from './components/PageTitle'
 
 const App = () => {
@@ -32,6 +33,7 @@ const App = () => {
           <Route path="/dashboard" element={<DashBoard />} />
           <Route path="/admin/tasks" element={<Manage />} />
           <Route path="/admin/users" element={<ManageUsers />} />
+          <Route path="/admin/strategic" element={<AdminStrategicDashboard />} />
           <Route path="/admin/ai-task-creator" element={<AiTaskCreator />} />
           <Route path="/create-task" element={<CreateTask />} />
           <Route path="/user-dashboard" element={<UserDashBoard />} />

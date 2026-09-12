@@ -10,6 +10,7 @@ import {
     Brain,
     CircleCheckBig,
     Route,
+    TrendingUp,
 } from "lucide-react"
 
 
@@ -43,6 +44,12 @@ export const DASHBOARD_MENU = [
         label:"Chat Assistant",
         icon:MessageSquare,
         path:"/assistant"
+    },
+    {
+        id:"04a",
+        label:"Strategic Insights",
+        icon:TrendingUp,
+        path:"/admin/strategic"
     },
     {
         id:"04",

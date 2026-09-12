@@ -35,5 +35,10 @@ export const API_PATHS = {
         CHAT: '/api/ai/chat',
         INSIGHTS: '/api/ai/insights',
         ROADMAP: '/api/ai/roadmap',
+        ADMIN_STANDUP: '/api/ai/admin-standup',
+        NLQ: '/api/ai/nlq',
+        SKILL_MATRIX: '/api/ai/skill-matrix',
+        WHAT_IF: '/api/ai/what-if',
+        REBALANCE: '/api/ai/rebalance',
     },
 }
